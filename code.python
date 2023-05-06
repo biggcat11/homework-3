@@ -1,0 +1,10 @@
+number=[33,67,8,13,54,119,3,84,25,41] #題目預設值
+length=len(number) #設定等等要做的長度
+while length!=1: #開始泡泡排序法
+    for i in range(length-1): #進入迴圈
+        if number[i]>number[i+1]: #條件，如果前者比後者小，兩者就交換，泡泡就會慢慢浮上來
+            save=number[i]
+            number[i]=number[i+1]
+            number[i+1]=save
+            print(number) #將單一次的比較結果列出
+    length-=1 #泡泡已經到最右側，長度減一
